@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="UnusedAttribute">
+
+    <data>
+
+        <variable
+            name="collection"
+            type="com.code.korti.seaofimages.data.models.Collection" />
+
+        <variable
+            name="listener"
+            type="com.code.korti.seaofimages.presentation.adapter.CollectionAdapterListener" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="@{(view) -> listener.onCollectionClicked(view, collection)}">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent_black">
+
+            <TextView
+                android:id="@+id/totalPhotosTextView"
+                style="@style/TextAppearanceNumberOfPhotos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="20 фотографий" />
+
+            <TextView
+                android:id="@+id/titleTextView"
+                style="@style/TextAppearanceCollectionName"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                app:layout_constraintStart_toStartOf="@+id/totalPhotosTextView"
+                app:layout_constraintTop_toBottomOf="@+id/totalPhotosTextView"
+                tools:text="I like a man with a beard" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                app:layout_constraintStart_toStartOf="@+id/guideline4">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/avatar"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:scaleType="centerCrop"
+                        tools:src="@tools:sample/backgrounds/scenic" />
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/name"
+                    style="?attr/textAppearanceBody2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/cardImage"
+                    app:layout_constraintTop_toTopOf="@+id/cardImage"
+                    tools:text="Иван пупкин" />
+
+                <TextView
+                    android:id="@+id/userName"
+                    style="?attr/textAppearanceCaption"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/cardImage"
+                    app:layout_constraintTop_toBottomOf="@+id/name"
+                    tools:text="'@name" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="28dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="28dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sea of Images</string>
+    <string name="auth_login">Log in via Unsplash</string>
+    <string name="auth_canceled">Authentication failed</string>
+
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="collection">Collection</string>
+
+    <string name="image_card_detail_transition_name">image_card_detail</string>
+    <string name="image_card_transition_name">image_card_%1$s</string>
+
+    <string name="collection_card_detail_transition_name">collection_card_detail</string>
+    <string name="collection_card_transition_name">collection_card_%1$s</string>
+
+    <string name="exit">Exit</string>
+    <string name="cancel">Cancel</string>
+    <string name="start">Begin</string>
+    <string name="skip">Skip</string>
+    <string name="open">Open</string>
+    <string name="downloading">Downloading..</string>
+    <string name="image_search">Search</string>
+    <string name="no_more_requests">No more requests</string>
+    <string name="no_more_requests_db">Out of requests, loaded from the database</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="click_again_to_exit">Click again to exit</string>
+    <string name="liked_photos">Liked photos</string>
+    <string name="sure_you_want_to_get_out">Are you sure you want to log out? All local data will be deleted.</string>
+    <string name="onbourding_text_1">A sea of pictures on any topic</string>
+    <string name="onbourding_text_2">Collect collections, share with friends</string>
+    <string name="onbourding_text_3">Upload your favorite pictures, track their statistics</string>
+    <string name="execution_has_begun">Execution has begun</string>
+    <string name="image_downloaded">Image downloaded</string>
+    <string name="download_error">Download error</string>
+    <string name="no_liked_photos">No liked photos</string>
+</resources>

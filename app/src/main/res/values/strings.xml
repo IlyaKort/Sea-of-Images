@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Sea of Images</string>
+    <string name="auth_login">Войти через Unsplash</string>
+    <string name="auth_canceled">Аутентификация не выполнена</string>
+
+    <string name="image_card_detail_transition_name">image_card_detail</string>
+    <string name="image_card_transition_name">image_card_%1$s</string>
+
+    <string name="collection_card_detail_transition_name">collection_card_detail</string>
+    <string name="collection_card_transition_name">collection_card_%1$s</string>
+
+    <string name="home">Дом</string>
+    <string name="profile">Профиль</string>
+    <string name="collection">Коллекции</string>
+    <string name="exit">Выйти</string>
+    <string name="cancel">Отмена</string>
+    <string name="skip">Пропустить</string>
+    <string name="open">Открыть</string>
+    <string name="start">Начать</string>
+    <string name="downloading">Скачивание..</string>
+    <string name="image_search">Поиск изображения</string>
+    <string name="no_more_requests">Кончились запросы</string>
+    <string name="no_more_requests_db">Кончились запросы, загружено из базы данных</string>
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="no_internet_connection">Нет подключения к интернету</string>
+    <string name="click_again_to_exit">Нажмите снова для выхода</string>
+    <string name="liked_photos">Понравившиеся фото</string>
+    <string name="sure_you_want_to_get_out">Вы уверены, что хотите выйти из системы? Все локальные данные будут удалены.</string>
+
+
+    <string name="onbourding_text_1">Море снимков под каждую тематику</string>
+    <string name="onbourding_text_2">Собирайте коллекции, делитесь с друзьями</string>
+    <string name="onbourding_text_3">Загружайте любимые снимки, отслеживайте их статистику</string>
+
+    <string name="execution_has_begun">Началось выполнение</string>
+    <string name="image_downloaded">Изображение скачено</string>
+    <string name="download_error">Ошибка при скачивании</string>
+    <string name="no_liked_photos">Нет понравившихся фото</string>
+</resources>
